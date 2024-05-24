@@ -1,0 +1,11 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+.todo {
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid black;
+}
+.strike {
+  text-decoration: line-through;
+}

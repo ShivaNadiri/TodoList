@@ -1,14 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
 const initialState = [
-  { id: 1, title: "code daily", completed: true },
-  { id: 2, title: "go for a walk", completed: false },
+  //   { id: 1, title: "code daily", completed: true },
+  //   { id: 2, title: "go for a walk", completed: false },
 ];
 const todoSlice = createSlice({
   name: "todos",
   initialState: initialState,
   reducers: {
     addTodo: (state, action) => {
-      state.push(action.payload);
+      return [action.payload, ...state];
     },
     removeTodo: (state, action) => {
       return state.filter((todo) => {

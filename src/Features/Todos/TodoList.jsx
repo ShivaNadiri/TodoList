@@ -6,7 +6,7 @@ function TodoList() {
     return state.toos;
   });
   return (
-    <div>
+    <div className="">
       {todos.map((todo) => {
         return <SingleTodoList key={todo.id} {...todo} />;
       })}
